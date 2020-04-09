@@ -58,7 +58,7 @@
                     
                     <li><a href="#" class="uk-text-bold"  uk-icon="mail"></a>
                         <div class="uk-navbar-dropdown" uk-dropdown="mode: click">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <ul class="uk-nav uk-navbar-dropdown-nav ">
                                 <li class="uk-active" >Mails</li>
                                 <li class="uk-nav-divider"><a href="#"><span uk-icon="mail"></span> This is a mail..</a></li>
                                 <li class="uk-nav-divider"><a href="#"><span uk-icon="mail"></span> This is a mail..</a></li>
@@ -210,50 +210,44 @@
 
         <!-- body contents  -->
         <div class="uk-width-expand@m uk-margin-remove padding-remove">
-        <section class="content1 uk-container uk-margin-bottom">
-            <h4>From</h4>
-            <!-- content start  -->
-           <div class="uk-card-default uk-padding uk-border-rounded">
-                <form class=" uk-form-stacked">
-                        <legend class="uk-legend">Form</legend>
-                        <div class="uk-margin">
-                            <label class="uk-form-label" for="form-stacked-text">Name :</label>
-                            <div class="uk-form-controls">
-                                <input class="uk-input custom-input" id="form-stacked-text" type="text" placeholder="Enter Your Name..">
-                            </div>
-                        </div>
-                        <div class="uk-margin">
-                            <label class="uk-form-label" for="form-stacked-text">Email :</label>
-                            <div class="uk-form-controls">
-                                <input class="uk-input custom-input" id="form-stacked-text" type="email" placeholder="Enter Your Email..">
-                            </div>
-                        </div>
-                        <div class="uk-margin">
-                            <label class="uk-form-label" for="form-stacked-text">Mobile :</label>
-                            <div class="uk-form-controls">
-                                <input class="uk-input custom-input" id="form-stacked-text" type="text" pattern="[0-9]{10}" placeholder="Enter Your Number..">
-                            </div>
-                        </div>
-                        <div class="uk-margin">
-                            <label class="uk-form-label" for="form-stacked-select">Select</label>
-                            <div class="uk-form-controls">
-                                <select class="uk-select custom-input" id="form-stacked-select">
-                                    <option>Option 01</option>
-                                    <option>Option 02</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="uk-margin">
-                            <textarea class="uk-textarea custom-input" rows="5" placeholder="Textarea"></textarea>
-                        </div>
-                        <p uk-margin>
-                            <button class="uk-button uk-button-primary">Submit</button>
-                        </p>
-                    </form>
-           </div>
-
+        <section class="content1 uk-container">
+            <h4>Table</h4>
+            <!-- content section  -->
+            <div class="uk-overflow-auto">
+                <div class="uk-card-default uk-padding uk-border-rounded">
+                        <form class=" uk-form-stacked">
+                                <legend class="uk-legend">Tables</legend>
+                                <table class="uk-table uk-table-divider">
+                                        <thead>
+                                            <tr>
+                                                <th>Table Heading</th>
+                                                <th>Table Heading</th>
+                                                <th>Table Heading</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Table Data</td>
+                                                <td>Table Data</td>
+                                                <td>Table Data</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Table Data</td>
+                                                <td>Table Data</td>
+                                                <td>Table Data</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Table Data</td>
+                                                <td>Table Data</td>
+                                                <td>Table Data</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                            </form>
+                </div>
+            </div>
+            </div>
         </section>
-        </div>
     </div>
 </body>
 </html>

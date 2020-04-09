@@ -210,50 +210,108 @@
 
         <!-- body contents  -->
         <div class="uk-width-expand@m uk-margin-remove padding-remove">
-        <section class="content1 uk-container uk-margin-bottom">
-            <h4>From</h4>
-            <!-- content start  -->
-           <div class="uk-card-default uk-padding uk-border-rounded">
-                <form class=" uk-form-stacked">
-                        <legend class="uk-legend">Form</legend>
-                        <div class="uk-margin">
-                            <label class="uk-form-label" for="form-stacked-text">Name :</label>
-                            <div class="uk-form-controls">
-                                <input class="uk-input custom-input" id="form-stacked-text" type="text" placeholder="Enter Your Name..">
+        <section class="content1 uk-container">
+                <!-- Header box  -->
+                <h4>Profile</h4>
+                <div uk-grid>
+                        <div class="uk-width-auto@m">
+                            <div class="uk-card email-card" style="min-width: 300px;">
+                                <div class="uk-flex-bottom" uk-grid>
+                                    <div class="uk-width-1-3 uk-flex-first">
+                                        <img src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/user/12.jpg" class="uk-border-rounded" style="height: 80px; width: 80px;" alt="Image">
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <a href="#" uk-toggle="target: .profile"><span style="float: right; margin-top: 10px; margin-right: 10px;" uk-icon="pencil"></span></a>
+                                        <h3 class="uk-text-bold uk-margin-remove" uk-margin-remove>Hello User</h3>
+                                        <h6 class=" uk-margin-remove uk-text-bold"> Admin</h6>
+                                    </div>
+                                </div>
+                                <div class="uk-margin">
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <h5 class="uk-margin-remove uk-text-bold">Email:</h5>
+                                        <p  class="uk-margin-remove">help@jibika.com</p>
+                                    </div>
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <h5 class="uk-margin-remove uk-text-bold">Phone:</h5>
+                                        <p  class="uk-margin-remove"> +91  98765 98765</p>
+                                    </div>
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <h5 class="uk-margin-remove uk-text-bold">Location:</h5>
+                                        <p  class="uk-margin-remove">Bangalore </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="uk-margin">
-                            <label class="uk-form-label" for="form-stacked-text">Email :</label>
-                            <div class="uk-form-controls">
-                                <input class="uk-input custom-input" id="form-stacked-text" type="email" placeholder="Enter Your Email..">
+                        <div class="uk-width-expand@m">
+                            <div class="uk-overflow-auto profile">
+                                <div class="uk-card-default uk-padding uk-border-rounded">
+                                        <form class=" uk-form-stacked">
+                                                <legend class="uk-legend">Report</legend>
+                                                <table class="uk-table uk-table-divider">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Table Heading</th>
+                                                                <th>Table Heading</th>
+                                                                <th>Table Heading</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Table Data</td>
+                                                                <td>Table Data</td>
+                                                                <td>Table Data</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Table Data</td>
+                                                                <td>Table Data</td>
+                                                                <td>Table Data</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Table Data</td>
+                                                                <td>Table Data</td>
+                                                                <td>Table Data</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                            </form>
+                                </div>
                             </div>
+                            <div class="uk-card-default uk-padding uk-border-rounded profile" hidden>
+                                <form class=" uk-form-stacked">
+                                        <legend class="uk-legend">Edit Profile</legend>
+                                        <div class="uk-margin">
+                                            <label class="uk-form-label" for="form-stacked-text">Name :</label>
+                                            <div class="uk-form-controls">
+                                                <input class="uk-input custom-input" id="form-stacked-text" type="text" placeholder="Enter Your Name..">
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin">
+                                            <label class="uk-form-label" for="form-stacked-text">Email :</label>
+                                            <div class="uk-form-controls">
+                                                <input class="uk-input custom-input" id="form-stacked-text" type="email" placeholder="Enter Your Email..">
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin">
+                                            <label class="uk-form-label" for="form-stacked-text">Mobile :</label>
+                                            <div class="uk-form-controls">
+                                                <input class="uk-input custom-input" id="form-stacked-text" type="text" pattern="[0-9]{10}" placeholder="Enter Your Number..">
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin">
+                                            <label class="uk-form-label" for="form-stacked-text">Address :</label>
+                                            <div class="uk-form-controls">
+                                                <input class="uk-input custom-input" id="form-stacked-text" type="text" placeholder="Enter Address..">
+                                            </div>
+                                        </div>
+                                        <p uk-margin>
+                                            <button class="uk-button uk-button-primary">Submit</button>
+                                        </p>
+                                    </form>
+                           </div>
                         </div>
-                        <div class="uk-margin">
-                            <label class="uk-form-label" for="form-stacked-text">Mobile :</label>
-                            <div class="uk-form-controls">
-                                <input class="uk-input custom-input" id="form-stacked-text" type="text" pattern="[0-9]{10}" placeholder="Enter Your Number..">
-                            </div>
-                        </div>
-                        <div class="uk-margin">
-                            <label class="uk-form-label" for="form-stacked-select">Select</label>
-                            <div class="uk-form-controls">
-                                <select class="uk-select custom-input" id="form-stacked-select">
-                                    <option>Option 01</option>
-                                    <option>Option 02</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="uk-margin">
-                            <textarea class="uk-textarea custom-input" rows="5" placeholder="Textarea"></textarea>
-                        </div>
-                        <p uk-margin>
-                            <button class="uk-button uk-button-primary">Submit</button>
-                        </p>
-                    </form>
-           </div>
-
+                    </div>
+            </div>
         </section>
-        </div>
     </div>
 </body>
 </html>
